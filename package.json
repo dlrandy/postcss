@@ -1,5 +1,5 @@
 {
-  "name": "@gochen/react-components",
+  "name": "react-components",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/dlrandy/react-components.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {

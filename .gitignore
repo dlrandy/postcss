@@ -1,2 +1,2 @@
-dev01/node_modules
-dev02/node_modules
+node_modules
+/**/node_modules/**/node_modules
