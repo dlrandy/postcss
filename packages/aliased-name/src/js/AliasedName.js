@@ -2,11 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-import '../styles/AliasedName.css';
+import "../styles/AliasedName.css";
 
 class AliasedName extends React.Component {
   hoverTimer = null;
+
   longHovering = false;
+
   render() {
     let className = classNames(
       { "svip-user": this.props.isSVIP },
@@ -41,6 +43,12 @@ class AliasedName extends React.Component {
     this.hoverTimer = setTimeout(() => this.onLongHover, 500);
   };
 
+  onLongHover = () => {
+    this.longHovering = true;
+
+    this.props.onLongHoverStartUsername(this.getIdNameDOM());
+  };
+
   handleMouseLeave = () => {
     clearTimeout(this.hoverTimer);
     this.hoverTimer = null;
@@ -55,19 +63,15 @@ class AliasedName extends React.Component {
   };
 
   handleClick = () => {
-    if (this.longHovering) {
-      this.longHovering = false;
-    }
+    this.longHovering = false;
 
-    this.props.onLongHoverStartUsername(this.getIdNameDOM());
+    this.props.onClicktUsername(this.getIdNameDOM());
   };
 
   getIdNameDOM = () => {
     return {
       id: this.props.id,
-
       name: this.props.name,
-
       el: this.el
     };
   };

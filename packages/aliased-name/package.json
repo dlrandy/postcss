@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "format": "prettier-eslint --write \"src/**/*.js\" && npm run lint && npm run stylelint-check",
+    "format": "prettier-eslint --write \"src/**/*.js\" && npm run lint && npm run stylelint",
     "lint": "eslint src --fix",
     "stylelint": "stylelint \"src/**/*.css\" --fix",
     "build": "webpack",
