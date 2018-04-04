@@ -40,7 +40,7 @@ class AliasedName extends React.Component {
       return;
     }
 
-    this.hoverTimer = setTimeout(() => this.onLongHover, 500);
+    this.hoverTimer = setTimeout(this.onLongHover, 500);
   };
 
   onLongHover = () => {
