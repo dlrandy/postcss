@@ -2,7 +2,7 @@ import React from "react";
 import Enzyme, { shallow, mount, render } from "enzyme";
 
 import AliasedName from "../src/index.js";
-describe("AliasedName component test", () => {
+describe("aliased-name component tests", () => {
   it("true should be true", () => {
     expect(true).toBe(true);
   });

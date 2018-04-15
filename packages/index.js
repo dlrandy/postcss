@@ -1,6 +1,6 @@
 export { 
-  default as AliasedName 
-} from './aliased-name';
+  default as AsyncComponent 
+} from './async-component';
 
 
 
